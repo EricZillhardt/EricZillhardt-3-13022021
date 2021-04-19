@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Oh my food</title>
+    <meta name="AUTHOR" content="Eric ZILLHARDT" />
+    <script
+      src="https://kit.fontawesome.com/2975c7b61a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:625px)"
+      href="css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 626px) and (max-width: 1299px)"
+      href="css/tablette.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1300px)"
+      href="css/style.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="bloc_page">
+      <div class="spinner_loader sortie">
+        <span class="spinner"></span>
+        <span class="spinner2"></span>
+        <span class="spinner3"></span>
+      </div>
+      <header>
+        <!-- Logo Oh my food -->
+        <div class="container__logo">
+          <img
+            class="container__logo--images"
+            src="images/logo/ohmyfood.png"
+            alt="Logo Oh my Food"
+          />
+        </div>
+        <!-- Localisation -->
+        <div class="container__separation"></div>
+        <div class="container__localisation">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Paris, Belleville</p>
+        </div>
+      </header>
+      <!-- Reserver -->
+      <div class="container-reserver-fonctionnement">
+        <section class="container__reserver">
+          <h1 class="container__reserver--titre">
+            Réservez le menu qui <br />
+            vous convient
+          </h1>
+          <p class="container__reserver--soustitre">
+            Découvrez des restaurants d'exception, <br />
+            séléctionnés par nos soins.
+          </p>
+          <div class="container__reserver--btn">Explorer nos restaurants</div>
+        </section>
+        <!-- Fonctionnement -->
+        <section class="container__fonctionnement">
+          <h2 class="container__fonctionnement--titre">Fonctionnement</h2>
+          <div class="container__fonctionnement--restaurant">
+              <div class="fonctionnement--restaurant">
+                <div class="menu--choix--1">
+                  <div class="menu--choix--nombre">1</div>
+                  <i class="fas fa-mobile-alt"></i>
+                  <span class="menu--choix--titre"
+                    >Choisissez un restaurant</span>
+                </div>
+
+                <div class="menu--choix--2">
+                  <span class="menu--choix--nombre">2</span>
+                  <i class="fas fa-list-ul"></i>
+                  <span class="menu--choix--titre">Composez votre menu</span>
+                </div>
+
+                <div class="menu--choix--3">
+                  <span class="menu--choix--nombre">3</span>
+                  <i class="fas fa-store"></i>
+                  <span class="menu--choix--titre">Dégustez au restaurant</span>
+                </div>
+              </div>
+          </div>
+        </section>
+      </div>
+      <!-- Restaurants-->
+      <section class="container__restaurants">
+        <h3 class="container__restaurants--titre">Restaurants</h3>
+
+        <div class="container__restaurants--presentation">
+          <a
+            class="restaurants--presentation--lien"
+            href="./lapalettedugout.html"
+          >
+          <div class="restaurants--presentation--new">Nouveau</div>
+            <div class="restaurants--presentation">
+              <img
+                class="restaurants--presentation--img"
+                src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                alt="restaurant"
+              />
+              <span class="restaurants--presentation--nom">
+                <strong>La palette du goût</strong></span
+              >
+              <span class="restaurants--presentation--ville">Ménilmontant</span>
+            </div>
+            <div class="coeur">
+              <i class="far fa-heart coeurvide"></i>
+              <i class="fas fa-heart coeurplein"></i>
+            </div>
+          </a>
+          <a
+            class="restaurants--presentation--lien"
+            href="./lanoteenchantee.html"
+          >
+          <div class="restaurants--presentation--new">Nouveau</div>
+            <div class="restaurants--presentation">
+              <img
+                class="restaurants--presentation--img"
+                src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                alt="restaurant"
+              />
+              <span class="restaurants--presentation--nom">
+                <strong>La note enchantée</strong></span
+              >
+              <span class="restaurants--presentation--ville">Charonne</span>
+            </div>
+            <div class="coeur">
+              <i class="far fa-heart coeurvide"></i>
+              <i class="fas fa-heart coeurplein"></i>
+            </div>
+          </a>
+          <a class="restaurants--presentation--lien" 
+             href="./alafrancaise.html"
+          >
+            <div class="restaurants--presentation">
+              <img
+                class="restaurants--presentation--img"
+                src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="restaurant"
+              />
+              <span class="restaurants--presentation--nom"
+                ><strong>À la française</strong></span
+              >
+              <span class="restaurants--presentation--ville">Cité Rouge</span>
+            </div>
+
+            <div class="coeur">
+              <i class="far fa-heart color--12 coeurvide"></i>
+              <i class="fas fa-heart coeurplein"></i>
+            </div>
+          </a>
+          <a class="restaurants--presentation--lien" href="./ledelicedessens.html">
+            <div class="restaurants--presentation">
+              <img
+                class="restaurants--presentation--img"
+                src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="restaurant"
+              />
+              <span class="restaurants--presentation--nom"
+                ><strong>Le délice des sens</strong></span
+              >
+              <span class="restaurants--presentation--ville"
+                >Folie-Méricourt</span
+              >
+            </div>
+
+              <div class="coeur">
+                <i class="far fa-heart coeurvide"></i>
+                <i class="fas fa-heart coeurplein"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <footer>
+        <div class="container__footer">
+          <div class="container__footer--marque"><p>ohmyfood</p></div>
+           <div class="container__footer--utensils">
+            <i class="fas fa-utensils"></i>
+              <p>Proposer un restaurant</p>
+           </div>
+          <div class="container__footer--hands">
+           <i class="fas fa-hands-helping"></i>
+            <p>Devenir partenaire</p>
+          </div>
+          <div class="container__footer--mentions"><p>Mentions légales</p></div>
+          <div class="container__footer--contact">
+            <a href="mailto:nullepart@gmail.com"><p>Contact</p></a>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
