@@ -1,0 +1,126 @@
+/* Spinner Loader */
+.spinner_loader {
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: white;
+  }
+  /* création du loader */
+  .spinner {
+    border-left: 5px solid #ffffff;
+    border-right: 5px solid #9456dc;
+    border-top: 5px solid #9456dc;
+    border-bottom: 5px solid #9456dc;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    animation: spinner linear 1s infinite;
+    -webkit-animation: spinner 1s linear infinite;
+    -moz-animation: spinner 1s linear infinite;
+    -o-animation: spinner 1s linear infinite;
+  
+    /* placement du loader */
+    margin: auto;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  /* création du loader */
+  .spinner2 {
+    border-left: 5px solid #ffffff;
+    border-right: 5px solid #99e2d0;
+    border-top: 5px solid #99e2d0;
+    border-bottom: 5px solid #99e2d0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    animation: spin linear 1s infinite;
+    -webkit-animation: spinner 1s linear infinite;
+    -moz-animation: spinner 1s linear infinite;
+    -o-animation: spinner 1s linear infinite;
+  
+    /* placement du loader */
+    margin: auto;
+    position: absolute;
+    padding: 1px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .spinner3 {
+    /* création du loader */
+    border-left: 5px solid #ffffff;
+    border-right: 5px solid #ff79da;
+    border-top: 5px solid #ff79da;
+    border-bottom: 5px solid #ff79da;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: spin linear 1s infinite;
+    -webkit-animation: spinner 1s linear infinite;
+    -moz-animation: spinner 1s linear infinite;
+    -o-animation: spinner 1s linear infinite;
+  
+    /* placement du loader */
+    margin: auto;
+    position: absolute;
+    padding: 1px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  @-webkit-keyframes spinner {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spinner {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  /* sortie du loader */
+  .sortie {
+    -webkit-animation: sortie 20s ease-in both;
+    animation: sortie 20s ease-in both;
+  }
+  @-webkit-keyframes sortie {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      background: transparent;
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+      background: transparent;
+    }
+  }
+  @keyframes sortie {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      background: transparent;
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+      background: transparent;
+    }
+  }
