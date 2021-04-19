@@ -1,0 +1,976 @@
+@charset "UTF-8";
+/* Spinner Loader */
+.spinner_loader {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: white;
+}
+
+/* création du loader */
+.spinner {
+  border-left: 5px solid #ffffff;
+  border-right: 5px solid #9456dc;
+  border-top: 5px solid #9456dc;
+  border-bottom: 5px solid #9456dc;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  animation: spinner linear 1s infinite;
+  -webkit-animation: spinner 1s linear infinite;
+  -moz-animation: spinner 1s linear infinite;
+  -o-animation: spinner 1s linear infinite;
+  /* placement du loader */
+  margin: auto;
+  position: absolute;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* création du loader */
+.spinner2 {
+  border-left: 5px solid #ffffff;
+  border-right: 5px solid #99e2d0;
+  border-top: 5px solid #99e2d0;
+  border-bottom: 5px solid #99e2d0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: spin linear 1s infinite;
+  -webkit-animation: spinner 1s linear infinite;
+  -moz-animation: spinner 1s linear infinite;
+  -o-animation: spinner 1s linear infinite;
+  /* placement du loader */
+  margin: auto;
+  position: absolute;
+  padding: 1px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.spinner3 {
+  /* création du loader */
+  border-left: 5px solid #ffffff;
+  border-right: 5px solid #ff79da;
+  border-top: 5px solid #ff79da;
+  border-bottom: 5px solid #ff79da;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  animation: spin linear 1s infinite;
+  -webkit-animation: spinner 1s linear infinite;
+  -moz-animation: spinner 1s linear infinite;
+  -o-animation: spinner 1s linear infinite;
+  /* placement du loader */
+  margin: auto;
+  position: absolute;
+  padding: 1px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* sortie du loader */
+.sortie {
+  animation: sortie 20s ease-in both;
+}
+
+@keyframes sortie {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    background: transparent;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+    background: transparent;
+  }
+}
+
+.bloc_page {
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.bloc_page_menu {
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.container__logo {
+  height: 100px;
+}
+
+.container__logo--images {
+  display: block;
+  position: relative;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 10px;
+}
+
+.container__separation {
+  background: linear-gradient(#00000005, #ced6e0);
+  height: 5px;
+  width: 100%;
+}
+
+.container__localisation {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  background-color: #0000001a;
+  width: 100%;
+}
+
+.container__localisation i {
+  font-size: 16px;
+  position: relative;
+  left: -10px;
+  top: 10px;
+}
+
+.container__localisation p {
+  margin-left: 10px;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  top: -5px;
+}
+
+/* Reserver - Fonctionnement */
+.container-reserver-fonctionnement {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "container-fonctionnement container-reserver";
+}
+
+.container__reserver {
+  height: 290px;
+  width: 100%;
+}
+
+.container__reserver--titre {
+  display: flex;
+  padding-top: 150px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  height: 10px;
+  width: 100%;
+  margin: 0px;
+}
+
+.container__reserver--soustitre {
+  margin-top: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: black;
+}
+
+.container__reserver--btn,
+.menu--detail-entree--btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 15px 15px 15px 15px;
+  border-radius: 40px 40px 40px 40px;
+  width: 200px;
+  border: 0px;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: #ffffff;
+  box-shadow: 8px 8px 12px #0000000a;
+}
+
+.container__reserver--btn:hover {
+  cursor: pointer;
+  transition-duration: 400ms;
+  box-shadow: 13px 11px 19px 0px rgba(0, 0, 0, 0.329);
+  opacity: 0.8;
+}
+
+.container__fonctionnement--titre {
+  display: block;
+  text-align: center;
+  margin-top: 43px;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.fonctionnement--restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.menu--choix--1 {
+  font-family: "roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #f2f2f2;
+  box-shadow: 8px 8px 12px #dfe6e9;
+  height: 68px;
+  width: 300px;
+  margin-bottom: 25px;
+}
+
+.menu--choix--titre {
+  color: #000000;
+}
+
+.menu--choix--1:hover,
+.menu--choix--2:hover,
+.menu--choix--3:hover {
+  cursor: pointer;
+  transition-duration: 0.25s;
+  background-color: #9256dc25;
+  color: #9456dc;
+}
+
+.menu--choix--2 {
+  font-family: "roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #f2f2f2;
+  box-shadow: 8px 8px 12px #dfe6e9;
+  height: 68px;
+  width: 300px;
+  margin-bottom: 25px;
+}
+
+.menu--choix--3 {
+  font-family: "roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #f2f2f2;
+  box-shadow: 8px 8px 12px #dfe6e9;
+  height: 68px;
+  width: 300px;
+  margin-bottom: 25px;
+}
+
+.menu--choix--nombre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 90px;
+  background: #9356dc;
+  color: #ffffff;
+  position: relative;
+  left: -9px;
+}
+
+.menu--choix--1 i,
+.menu--choix--2 i,
+.menu--choix--3 i {
+  display: block;
+  position: relative;
+  font-size: 19px;
+  left: 15px;
+}
+
+.menu--choix--titre {
+  display: block;
+  position: relative;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  left: 40px;
+}
+
+.container__restaurants {
+  display: block;
+  width: 100%;
+  background-color: #f2f2f2;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+.container__restaurants--titre {
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin-left: 3%;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.restaurants--presentation--lien:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.restaurants--presentation--lien:hover {
+  text-decoration: none;
+}
+
+.container__restaurants--presentation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.restaurants--presentation {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 25px 25px 25px 25px;
+  width: 590px;
+  height: 250px;
+}
+
+img.restaurants--presentation--img {
+  width: 100%;
+  height: 175px;
+  border-radius: 25px 25px 0px 0px;
+  object-fit: cover;
+}
+
+.restaurants--presentation--new {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 5px;
+  width: 60px;
+  position: relative;
+  top: 40px;
+  left: 80%;
+}
+
+.coeurvide {
+  display: block;
+  position: relative;
+  font-size: 21px;
+  margin-left: 90%;
+  top: -35px;
+  background-color: transparent;
+  color: black;
+}
+
+.coeurvide:hover {
+  cursor: pointer;
+  color: transparent;
+}
+
+.coeurvide:hover + .coeurplein {
+  cursor: pointer;
+  transform: scale(1);
+  background: linear-gradient(to left, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.coeurplein {
+  position: relative;
+  font-size: 21px;
+  top: -60px;
+  left: 90%;
+  transform: scale(0);
+  transition: transform 1s;
+  color: transparent;
+}
+
+.coeurplein:hover {
+  cursor: pointer;
+}
+
+.restaurants--presentation--nom {
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 18px;
+  margin-left: 20px;
+  color: black;
+}
+
+.restaurants--presentation--ville {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 20px;
+  color: black;
+}
+
+.container__footer {
+  display: flex;
+  flex-direction: column;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: -5px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  height: 230px;
+  color: #ffffff;
+  background-color: #2c3a47;
+}
+
+.container__footer--marque {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  font-family: Shrikhand;
+  font-size: 18px;
+}
+
+.container__footer--utensils,
+.container__footer--hands {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.container__footer--utensils i {
+  display: block;
+  position: relative;
+  color: #ffffff;
+  font-size: 12px;
+  left: 30px;
+  top: -20px;
+}
+
+.container__footer--utensils p {
+  display: block;
+  position: relative;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  left: 45px;
+  top: -37px;
+}
+
+.container__footer--hands i {
+  display: block;
+  position: relative;
+  color: #ffffff;
+  font-size: 12px;
+  top: -40px;
+  left: 30px;
+}
+
+.container__footer--hands p {
+  display: block;
+  position: relative;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  left: 40px;
+  top: -57px;
+}
+
+.container__footer--contact {
+  display: block;
+  position: relative;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 30px;
+  top: -90px;
+  color: #ffffff;
+}
+
+.container__footer--mentions {
+  display: block;
+  position: relative;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 30px;
+  top: -75px;
+  color: #ffffff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* restaurant détail */
+.restaurant__logo {
+  height: 30px;
+}
+
+.arrow {
+  font-size: 20px;
+  color: black;
+}
+
+.arrow:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.arrow:link {
+  color: black;
+  text-decoration: none;
+}
+
+.restaurant__logo--icon {
+  display: block;
+  height: 80%;
+  position: relative;
+  width: 90%;
+  left: 25px;
+  top: -12px;
+}
+
+.restaurant__logo--images {
+  display: block;
+  position: relative;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 13px;
+}
+
+img.restaurant__menu--img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.coeurvide2 {
+  display: block;
+  position: relative;
+  font-size: 21px;
+  font-weight: lighter;
+  margin-left: 103%;
+  top: -60px;
+  background-color: transparent;
+  color: black;
+}
+
+.coeurvide2:hover {
+  cursor: pointer;
+  color: transparent;
+}
+
+.coeurvide2:hover + .coeurplein2 {
+  cursor: pointer;
+  transform: scale(1);
+  background: linear-gradient(to left, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-left: 100%;
+}
+
+.coeurplein2 {
+  position: relative;
+  font-size: 21px;
+  top: -94px;
+  left: 15px;
+  transform: scale(0);
+  transition: transform 1s;
+  color: transparent;
+}
+
+.coeurplein2:hover {
+  cursor: pointer;
+}
+
+.restaurant__menu--detail {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  position: relative;
+  width: 100%;
+  top: -65px;
+  height: 1200px;
+  border-radius: 50px 50px 0px 0px;
+  background-color: #f2f2f2;
+}
+
+.restaurant__menu--detail--titre {
+  display: block;
+  position: relative;
+  font-family: Shrikhand;
+  margin-top: 10px;
+  width: 80%;
+  height: 60px;
+  font-size: 29px;
+  margin-left: 22px;
+}
+
+.restaurant-menu--detail-entree-titre {
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  font-family: "roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  width: 40%;
+  left: 20px;
+}
+
+.restaurant-menu--detail-entree-titre-border {
+  display: block;
+  position: relative;
+  border-bottom: 3px solid #99e2d0;
+  width: 40px;
+  left: 20px;
+  top: -10px;
+}
+
+.menu--entree {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  text-align: left;
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px 20px 20px 20px;
+  width: 90%;
+  height: 60px;
+  border: 0px;
+  background: #ffffff;
+  color: black;
+  box-shadow: 0 0 20px #0000002e;
+}
+
+.menu--entree--double {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px 20px 20px 20px;
+  width: 90%;
+  height: 80px;
+  border: 0px;
+  background: #ffffff;
+  color: black;
+  box-shadow: 0 0 20px #0000002e;
+}
+
+.menu--detail-entree {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.menu--detail-entree,
+.menu--detail-entree--soustitre {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+.menu--detail-entree--soustitre {
+  width: 81%;
+  text-overflow: ellipsis;
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 100%;
+}
+
+/* création */
+.coche2 {
+  width: 0px;
+  height: 68px;
+  border: 1px solid #99e2d0;
+  background: #99e2d0;
+  border-radius: 0 20px 20px 0;
+  position: relative;
+}
+
+.coche2--double {
+  width: 0px;
+  height: 88px;
+  border: 1px solid #99e2d0;
+  background: #99e2d0;
+  border-radius: 0 20px 20px 0;
+  position: relative;
+}
+
+.coche {
+  position: relative;
+  top: -76px;
+  left: 101%;
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+}
+
+.coche--double {
+  position: relative;
+  top: -98px;
+  left: 101%;
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+}
+
+.coche i {
+  animation: alternate;
+  -webkit-animation: rotate 1s linear infinite;
+  -moz-animation: rotate 1s linear infinite;
+  -o-animation: rotate 1s linear infinite;
+}
+
+.coche--double i {
+  animation: alternate;
+  -webkit-animation: rotate 1s linear infinite;
+  -moz-animation: rotate 1s linear infinite;
+  -o-animation: rotate 1s linear infinite;
+}
+
+/* placement */
+.coche i {
+  display: flex;
+  font-size: 22px;
+  margin-top: 19px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.coche--double i {
+  display: flex;
+  font-size: 22px;
+  margin-top: 35px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* animation */
+.coche i {
+  animation: alternate;
+  -webkit-animation: rotate 1s linear infinite;
+  -moz-animation: rotate 1s linear infinite;
+  -o-animation: rotate 1s linear infinite;
+}
+
+.coche--double i {
+  animation: alternate;
+  -webkit-animation: rotate 1s linear infinite;
+  -moz-animation: rotate 1s linear infinite;
+  -o-animation: rotate 1s linear infinite;
+}
+
+.menu--detail-entree--prix {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 15px;
+  width: 20px;
+  top: -20px;
+  left: 90%;
+}
+
+.menu--detail-entree--prix--double {
+  display: block;
+  position: relative;
+  font-family: roboto;
+  font-weight: bold;
+  width: 40px;
+  font-size: 15px;
+  top: -30%;
+  left: 87%;
+}
+
+.menu--entree:hover
+.coche
+.coche2 {
+  cursor: pointer;
+  width: 68px;
+  transition: linear 400ms;
+  transform: translateX(-68px);
+  visibility: visible;
+}
+
+.menu--entree--double:hover
+.coche--double
+.coche2--double {
+  cursor: pointer;
+  width: 68px;
+  transition: linear 400ms;
+  transform: translateX(-68px);
+  visibility: visible;
+}
+
+.menu--entree:hover
+.coche i {
+  cursor: pointer;
+  transition-duration: 400ms;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+.menu--entree--double:hover
+.coche--double i {
+  cursor: pointer;
+  transition-duration: 400ms;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+.menu--entree:hover
+.menu--detail-entree--soustitre {
+  cursor: pointer;
+  width: 50%;
+}
+
+.menu--entree:hover
+.menu--detail-entree {
+  cursor: pointer;
+  width: 50%;
+}
+
+.text-ellipis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu--entree:hover
+.menu--detail-entree--prix {
+  cursor: pointer;
+  transition: linear 400ms;
+  transform: translateX(-45px);
+}
+
+.menu--detail-entree--btn {
+  margin-top: 45px;
+  width: 150px;
+  margin-bottom: 50px;
+  box-shadow: 8px 8px 12px #dfe6e9;
+}
+
+.menu--detail-entree--btn:hover {
+  cursor: pointer;
+  transition-duration: 400ms;
+  box-shadow: 13px 11px 19px 0px rgba(0, 0, 0, 0.329);
+  opacity: 0.8;
+}
+
+.container__footer--detail {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto;
+  font-size: 25px;
+  width: 100%;
+  height: 170px;
+  color: #ffffff;
+  line-height: 10px;
+  background-color: #2c3a47;
+}
+
+.transition {
+  animation: fondu 1s ease-in-out;
+  -moz-animation: fondu 1s ease-in-out;
+  /* Firefox */
+  -webkit-animation: fondu 1s ease-in-out;
+  -o-animation: fondu 1s ease-in-out;
+}
+
+.transition2 {
+  animation: fondu 2s ease-in-out;
+  -moz-animation: fondu 2s ease-in-out;
+  /* Firefox */
+  -webkit-animation: fondu 2s ease-in-out;
+  /* Safari et Chrome */
+  -o-animation: fondu 2s ease-in-out;
+  /* Opera */
+}
+
+.transition3 {
+  animation: fondu 3s ease-in-out;
+  -moz-animation: fondu 3s ease-in-out;
+  /* Firefox */
+  -webkit-animation: fondu 3s ease-in-out;
+  /* Safari et Chrome */
+  -o-animation: fondu 3s ease-in-out;
+  /* Opera */
+}
+
+@keyframes fondu {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/*# sourceMappingURL=tablette.css.map */
