@@ -20,9 +20,6 @@
   height: 90px;
   border-radius: 50%;
   animation: spinner linear 1s infinite;
-  -webkit-animation: spinner 1s linear infinite;
-  -moz-animation: spinner 1s linear infinite;
-  -o-animation: spinner 1s linear infinite;
   /* placement du loader */
   margin: auto;
   position: absolute;
@@ -43,9 +40,6 @@
   height: 40px;
   border-radius: 50%;
   animation: spin linear 1s infinite;
-  -webkit-animation: spinner 1s linear infinite;
-  -moz-animation: spinner 1s linear infinite;
-  -o-animation: spinner 1s linear infinite;
   /* placement du loader */
   margin: auto;
   position: absolute;
@@ -66,9 +60,6 @@
   height: 80px;
   border-radius: 50%;
   animation: spin linear 1s infinite;
-  -webkit-animation: spinner 1s linear infinite;
-  -moz-animation: spinner 1s linear infinite;
-  -o-animation: spinner 1s linear infinite;
   /* placement du loader */
   margin: auto;
   position: absolute;
@@ -81,10 +72,10 @@
 
 @keyframes spinner {
   0% {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -740,17 +731,11 @@ img.restaurant__menu--img {
 
 .coche i {
   animation: alternate;
-  -webkit-animation: rotate 1s linear infinite;
-  -moz-animation: rotate 1s linear infinite;
-  -o-animation: rotate 1s linear infinite;
 }
 
 .coche2--double,
 .coche i {
   animation: alternate;
-  -webkit-animation: rotate 1s linear infinite;
-  -moz-animation: rotate 1s linear infinite;
-  -o-animation: rotate 1s linear infinite;
 }
 
 /* placement */
@@ -776,9 +761,6 @@ img.restaurant__menu--img {
 /* animation */
 .coche--double i {
   animation: alternate;
-  -webkit-animation: rotate 1s linear infinite;
-  -moz-animation: rotate 1s linear infinite;
-  -o-animation: rotate 1s linear infinite;
 }
 
 .menu--detail-entree--prix {
@@ -829,9 +811,6 @@ img.restaurant__menu--img {
   cursor: pointer;
   transition-duration: 400ms;
   transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
 }
 
 .menu--entree--double:hover
@@ -839,9 +818,6 @@ img.restaurant__menu--img {
   cursor: pointer;
   transition-duration: 400ms;
   transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
 }
 
 .menu--entree:hover
@@ -895,30 +871,14 @@ img.restaurant__menu--img {
 
 .transition {
   animation: fondu 1s ease-in-out;
-  -moz-animation: fondu 1s ease-in-out;
-  /* Firefox */
-  -webkit-animation: fondu 1s ease-in-out;
-  -o-animation: fondu 1s ease-in-out;
 }
 
 .transition2 {
   animation: fondu 2s ease-in-out;
-  -moz-animation: fondu 2s ease-in-out;
-  /* Firefox */
-  -webkit-animation: fondu 2s ease-in-out;
-  /* Safari et Chrome */
-  -o-animation: fondu 2s ease-in-out;
-  /* Opera */
 }
 
 .transition3 {
   animation: fondu 3s ease-in-out;
-  -moz-animation: fondu 3s ease-in-out;
-  /* Firefox */
-  -webkit-animation: fondu 3s ease-in-out;
-  /* Safari et Chrome */
-  -o-animation: fondu 3s ease-in-out;
-  /* Opera */
 }
 
 @keyframes fondu {
