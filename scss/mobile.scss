@@ -632,6 +632,13 @@ img.restaurant__menu--img {
   transform: translateX(-68px);
   visibility: visible;
 }
+.coche2,
+.coche1{
+  transition: linear 400ms;
+  cursor: pointer;
+  width: 0px;
+  visibility: hidden;
+} 
 .menu--entree--double:hover
 .coche--double
 .coche2--double{

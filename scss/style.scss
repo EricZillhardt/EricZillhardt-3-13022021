@@ -529,7 +529,6 @@ img.restaurant__menu--img {
   left:101%;
   width: 0px;
   height: 0px;
-  visibility: hidden;
 }
 .coche--double{
   position: relative;
@@ -537,7 +536,6 @@ img.restaurant__menu--img {
   left:101%;
   width: 0px;
   height: 0px;
-  visibility: hidden;
 }
 
 .coche i {
@@ -609,10 +607,17 @@ img.restaurant__menu--img {
 .coche2{
   cursor: pointer;
   width: 68px;
-  transition: linear 400ms;
   transform: translateX(-75px);
   visibility: visible;
+  transition: linear 400ms;
 }
+.coche2,
+.coche1{
+  transition: linear 200ms;
+  cursor: pointer;
+  width: 0px;
+  visibility: hidden;
+} 
 .menu--entree--double:hover
 .coche--double
 .coche2--double{
@@ -627,9 +632,6 @@ img.restaurant__menu--img {
   cursor: pointer;
   transition-duration: 400ms;
   transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
 }
 .menu--entree:hover 
 .coche i{
