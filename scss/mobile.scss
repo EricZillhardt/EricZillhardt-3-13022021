@@ -99,11 +99,11 @@
   color: #ffffff;
   box-shadow: 8px 8px 12px #0000000a;
 }
-.container__annonce--btn:hover {
+.container__reserver--btn:hover {
   cursor: pointer;
-  transition-duration: 0.25s;
-  box-shadow: 13px 11px 19px 0px rgba(0, 0, 0, 1);
-  opacity: 0.6;
+  transition-duration: 400ms;
+  box-shadow: 13px 11px 19px 0px rgba(0, 0, 0, 0.329);
+  opacity: 0.8;
 }
 .container__fonctionnement--titre {
   display: block;
@@ -181,8 +181,6 @@
   flex-direction: column;
   align-items: center;
   background-color: #f2f2f2;
-  margin-top: 50px;
-  padding-bottom: 30px;
   height: 100%;
   width: 100%;
 }
@@ -207,17 +205,18 @@
   background-color: #ffffff;
   border-radius: 25px 25px 25px 25px;
   width: 100%;
-  height: 280px;
+  height: 240px;
   margin-bottom: 20px;
 }
 img.restaurants--presentation--img {
   width: 100%;
-  height: 195px;
+  height: 163px;
   border-radius: 25px 25px 0px 0px;
   object-fit: cover;
 }
 .restaurants--presentation--new {
   display: block;
+  position: relative;
   font-family: "roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -225,10 +224,28 @@ img.restaurants--presentation--img {
   color: #1b6150;
   padding: 5px;
   width:60px;
-  position: relative;
-  top: 50px;
-  left: 280px;
+
 }
+@media screen and (min-width: 320px) {
+  .restaurants--presentation--new {
+    display: block;
+    position: relative;
+    margin-bottom: -30px;
+    top: -250px;
+    left: 220px;}
+  }
+  @media screen and (min-width: 375px) {
+    .restaurants--presentation--new {
+      display: block;
+  position: relative;
+      top: -250px;
+      left: 270px;}
+    }
+  @media screen and (min-width: 414px) {
+    .restaurants--presentation--new {
+      top: -250px;
+      left: 315px;}
+    }
 .coeur{
   width: 0px;
   height: 0px;
@@ -237,11 +254,24 @@ img.restaurants--presentation--img {
   display: block;
   position: relative;
   font-size: 21px;
-  margin-left: 320px;
-  top: -68px;
   background-color: transparent;
   color: black;
 }
+@media screen and (min-width: 320px) {
+  .coeurvide {
+    left: 260px;
+    top: -65px;}
+  }
+  @media screen and (min-width: 375px) {
+    .coeurvide {
+      left: 305px;
+      top: -70px;}
+    }
+  @media screen and (min-width: 414px) {
+    .coeurvide {
+      left: 340px;
+      top: -65px;}
+    }
 .coeurvide:hover {
   cursor: pointer;
   color: transparent;
@@ -257,12 +287,25 @@ img.restaurants--presentation--img {
 .coeurplein {
   position: relative;
   font-size: 21px;
-  top: -90px;
-  left: 320px;
   transform: scale(0);
   transition: transform 1s;
   color: transparent;
 }
+@media screen and (min-width: 320px) {
+  .coeurplein {
+    left: 250px;
+    top: -93px;}
+  }
+  @media screen and (min-width: 375px) {
+    .coeurplein {
+      left: 305px;
+      top: -90px;}
+    }
+  @media screen and (min-width: 414px) {
+    .coeurplein {
+      left: 340px;
+      top: -88px;}
+    }
 .coeurplein:hover {
   cursor: pointer;
 }
@@ -410,14 +453,30 @@ img.restaurant__menu--img {
 }
 
 .coeurvide2 {
+  display: block;
   position: relative;
   font-size: 21px;
   font-weight: lighter;
-  left: 290px;
-  top: -70px;
   background-color: transparent;
   color: black;
 }
+
+@media screen and (min-width: 320px) {
+  .coeurvide2 {
+    left: 240px;
+    top: -53px;}
+  }
+  @media screen and (min-width: 375px) {
+    .coeurvide2 {
+      left: 290px;
+      top: -56px;}
+    }
+  @media screen and (min-width: 414px) {
+    .coeurvide2 {
+      left: 320px;
+      top: -58px;}
+    }
+
 .coeurvide2:hover {
   cursor: pointer;
   color: transparent;
@@ -433,12 +492,26 @@ img.restaurant__menu--img {
 .coeurplein2 {
   position: relative;
   font-size: 21px;
-  left: 290px;
-  top: -116px;
   transform: scale(0);
   transition: transform 1s;
   color: transparent;
 }
+@media screen and (min-width: 320px) {
+.coeurplein2 {
+  left: 240px;
+  top: -85px;}
+}
+@media screen and (min-width: 375px) {
+  .coeurplein2 {
+    left: 290px;
+    top: -89px;}
+  }
+@media screen and (min-width: 414px) {
+  .coeurplein2 {
+  left: 318px;
+  top: -93px;}
+}
+
 .coeurplein2:hover {
   cursor: pointer;
 }
@@ -462,17 +535,27 @@ img.restaurant__menu--img {
   margin-top: 10px;
   width: 80%;
   height: 60px;
-  font-size: 29px;
   margin-left: 22px;
 }
-
+@media screen and (min-width: 320px) {
+  .restaurant__menu--detail--titre {
+    font-size: 25px;}
+  }
+@media screen and (min-width: 375px) {
+    .restaurant__menu--detail--titre {
+      font-size: 27px;}
+    }
+@media screen and (min-width: 414px) {
+      .restaurant__menu--detail--titre {
+        font-size: 29px;}
+      }
 .restaurant-menu--detail-entree-titre {
   display: block;
   position: relative;
   margin-top: 20px;
   font-family: "roboto", sans-serif;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 700;
   width: 40%;
   left: 20px;
 }
@@ -663,12 +746,12 @@ img.restaurant__menu--img {
 .menu--entree:hover
 .menu--detail-entree--soustitre{
   cursor: pointer;
-  width: 50%;
+  width: 66%;
 }
 .menu--entree:hover
 .menu--detail-entree{
   cursor: pointer;
-  width: 50%;
+  width: 63%;
 }
 .text-ellipis{
   white-space: nowrap;
@@ -705,12 +788,21 @@ img.restaurant__menu--img {
 }
 .transition {
   animation: fondu 1s ease-in-out;
+  -moz-animation: fondu 1 ease-in-out; /* Firefox */
+  -webkit-animation: fondu 1s ease-in-out;
+  -o-animation: fondu 1s ease-in-out; 
 }
 .transition2 {
-  animation: fondu 2s ease-in-out;
+  animation: fondu 3s ease-in-out;
+  -moz-animation: fondu 3s ease-in-out; /* Firefox */
+  -webkit-animation: fondu 3s ease-in-out; /* Safari et Chrome */
+  -o-animation: fondu 3s ease-in-out; /* Opera */
 }
 .transition3 {
-  animation: fondu 3s ease-in-out;
+  animation: fondu 5s ease-in-out;
+  -moz-animation: fondu 5s ease-in-out; /* Firefox */
+  -webkit-animation: fondu 5s ease-in-out; /* Safari et Chrome */
+  -o-animation: fondu 5s ease-in-out; /* Opera */
 }
 @keyframes fondu {
   from {

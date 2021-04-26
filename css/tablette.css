@@ -379,6 +379,8 @@ img.restaurants--presentation--img {
 }
 
 .restaurants--presentation--new {
+  display: block;
+  position: relative;
   font-family: "roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
@@ -386,9 +388,8 @@ img.restaurants--presentation--img {
   color: #1b6150;
   padding: 5px;
   width: 60px;
-  position: relative;
-  top: 40px;
-  left: 80%;
+  top: -280px;
+  left: 500px;
 }
 
 .coeurvide {
@@ -396,7 +397,7 @@ img.restaurants--presentation--img {
   position: relative;
   font-size: 21px;
   margin-left: 90%;
-  top: -35px;
+  top: -45px;
   background-color: transparent;
   color: black;
 }
@@ -418,7 +419,7 @@ img.restaurants--presentation--img {
 .coeurplein {
   position: relative;
   font-size: 21px;
-  top: -60px;
+  top: -65px;
   left: 90%;
   transform: scale(0);
   transition: transform 1s;
@@ -939,29 +940,29 @@ img.restaurant__menu--img {
 
 .transition {
   animation: fondu 1s ease-in-out;
-  -moz-animation: fondu 1s ease-in-out;
+  -moz-animation: fondu 1 ease-in-out;
   /* Firefox */
   -webkit-animation: fondu 1s ease-in-out;
   -o-animation: fondu 1s ease-in-out;
 }
 
 .transition2 {
-  animation: fondu 2s ease-in-out;
-  -moz-animation: fondu 2s ease-in-out;
-  /* Firefox */
-  -webkit-animation: fondu 2s ease-in-out;
-  /* Safari et Chrome */
-  -o-animation: fondu 2s ease-in-out;
-  /* Opera */
-}
-
-.transition3 {
   animation: fondu 3s ease-in-out;
   -moz-animation: fondu 3s ease-in-out;
   /* Firefox */
   -webkit-animation: fondu 3s ease-in-out;
   /* Safari et Chrome */
   -o-animation: fondu 3s ease-in-out;
+  /* Opera */
+}
+
+.transition3 {
+  animation: fondu 5s ease-in-out;
+  -moz-animation: fondu 5s ease-in-out;
+  /* Firefox */
+  -webkit-animation: fondu 5s ease-in-out;
+  /* Safari et Chrome */
+  -o-animation: fondu 5s ease-in-out;
   /* Opera */
 }
 
