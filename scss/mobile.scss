@@ -280,8 +280,8 @@ img.restaurants--presentation--img {
   cursor: pointer;
   transform: scale(1);
   background: linear-gradient(to left, #ff79da, #9356dc);
-  background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   color: transparent;
 }
 .coeurplein {
@@ -293,13 +293,13 @@ img.restaurants--presentation--img {
 }
 @media screen and (min-width: 320px) {
   .coeurplein {
-    left: 250px;
+    left: 260px;
     top: -93px;}
   }
   @media screen and (min-width: 375px) {
     .coeurplein {
       left: 305px;
-      top: -90px;}
+      top: -87px;}
     }
   @media screen and (min-width: 414px) {
     .coeurplein {
@@ -485,8 +485,8 @@ img.restaurant__menu--img {
   cursor: pointer;
   transform: scale(1);
   background: linear-gradient(to left, #ff79da, #9356dc);
-  background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   color: transparent;
 }
 .coeurplein2 {
