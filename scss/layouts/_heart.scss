@@ -3,7 +3,7 @@
     position: relative;
     font-size: 21px;
     margin-left: 90%;
-    top: -35px;
+    top: -45px;
     background-color: transparent;
     color: black;
   }
@@ -15,14 +15,14 @@
     cursor: pointer;
     transform: scale(1);
     background: linear-gradient(to left, #ff79da, #9356dc);
-    background-clip: text;
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     color: transparent;
   }
   .coeurplein {
     position: relative;
     font-size: 21px;
-    top: -60px;
+    top: -65px;
     left: 90%;
     transform: scale(0);
     transition: transform 1s;
