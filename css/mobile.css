@@ -98,6 +98,60 @@
   }
 }
 
+@media screen and (min-width: 320px) {
+  h1 {
+    font-family: Shrikhand;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  h2 {
+    font-family: "roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  h3 {
+    font-family: "roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  h1 {
+    font-family: Shrikhand;
+    font-size: 29px;
+    font-weight: 400;
+  }
+  h2 {
+    font-family: "roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  h3 {
+    font-family: "roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  h1 {
+    font-family: Shrikhand;
+    font-size: 29px;
+    font-weight: 400;
+  }
+  h2 {
+    font-family: "roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  h3 {
+    font-family: "roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
 /*formatage de la page*/
 .bloc_page {
   width: 100%;
@@ -138,20 +192,36 @@
   width: 100%;
 }
 
+.localisation-recherche {
+  display: flex;
+  flex-direction: row;
+}
+
 .container__localisation i {
   font-size: 16px;
   position: relative;
-  left: -10px;
+  left: -60px;
   top: 10px;
 }
 
-.container__localisation p {
-  margin-left: 10px;
+input::placeholder {
   font-family: roboto;
   font-weight: bold;
   font-size: 16px;
+  color: #000000;
+}
+
+.container__localisation-saisie {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+  margin-left: 10px;
   position: relative;
-  top: -5px;
+  background-color: transparent;
+  border: 0px;
+  top: -35px;
+  left: 34%;
 }
 
 .container__reserver {
@@ -459,7 +529,7 @@ img.restaurants--presentation--img {
   font-family: "roboto", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  margin-top: 18px;
+  margin-top: -10px;
   margin-left: 20px;
   color: black;
 }
@@ -467,8 +537,9 @@ img.restaurants--presentation--img {
 .restaurants--presentation--ville {
   font-family: "roboto", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 20px;
+  margin-top: -20px;
   color: black;
 }
 
@@ -713,31 +784,12 @@ img.restaurant__menu--img {
   margin-left: 22px;
 }
 
-@media screen and (min-width: 320px) {
-  .restaurant__menu--detail--titre {
-    font-size: 25px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  .restaurant__menu--detail--titre {
-    font-size: 27px;
-  }
-}
-
-@media screen and (min-width: 414px) {
-  .restaurant__menu--detail--titre {
-    font-size: 29px;
-  }
-}
-
 .restaurant-menu--detail-entree-titre {
   display: block;
   position: relative;
   margin-top: 20px;
   font-family: "roboto", sans-serif;
   font-size: 17px;
-  font-weight: 700;
   width: 40%;
   left: 20px;
 }
@@ -783,28 +835,21 @@ img.restaurant__menu--img {
 }
 
 .menu--detail-entree {
-  font-family: "roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  margin-top: 10px;
+  margin-top: -10px;
   margin-left: 10px;
 }
 
-.menu--detail-entree,
 .menu--detail-entree--soustitre {
   font-family: "roboto", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
-  margin-top: 5px;
+  margin-top: -10px;
   margin-left: 10px;
 }
 
 .menu--detail-entree--soustitre {
   width: 81%;
   text-overflow: ellipsis;
-  font-family: "roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
 }
 
 .coche2 {
@@ -827,22 +872,65 @@ img.restaurant__menu--img {
   position: relative;
 }
 
-.coche {
-  position: relative;
-  top: -74px;
-  left: 101%;
-  width: 0px;
-  height: 0px;
-  visibility: hidden;
+@media screen and (min-width: 320px) {
+  .coche {
+    position: relative;
+    top: -77px;
+    left: 101%;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+  .coche--double {
+    position: relative;
+    top: -117px;
+    left: 101%;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
 }
 
-.coche--double {
-  position: relative;
-  top: -115px;
-  left: 101%;
-  width: 0px;
-  height: 0px;
-  visibility: hidden;
+@media screen and (min-width: 375px) {
+  .coche {
+    position: relative;
+    top: -81px;
+    left: 101%;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+  .coche--double {
+    position: relative;
+    top: -123px;
+    left: 101%;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .coche {
+    position: relative;
+    top: -81px;
+    left: 101%;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+  .coche--double {
+    position: relative;
+    top: -122px;
+    left: 101%;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+}
+
+.coeurplein2:hover {
+  cursor: pointer;
 }
 
 .coche i {
@@ -888,7 +976,7 @@ img.restaurant__menu--img {
   font-size: 15px;
   width: 20px;
   top: -17px;
-  left: 90%;
+  left: 89%;
 }
 
 .menu--detail-entree--prix--double {

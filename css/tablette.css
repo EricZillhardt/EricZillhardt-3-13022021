@@ -98,6 +98,25 @@
   }
 }
 
+/* Formatage poclice */
+h1 {
+  font-family: Shrikhand;
+  font-size: 29px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .bloc_page {
   margin: 0px auto;
   padding: 0px;
@@ -135,20 +154,36 @@
   width: 100%;
 }
 
+.localisation-recherche {
+  display: flex;
+  flex-direction: row;
+}
+
 .container__localisation i {
   font-size: 16px;
   position: relative;
-  left: -10px;
+  left: -60px;
   top: 10px;
 }
 
-.container__localisation p {
-  margin-left: 10px;
+input::placeholder {
   font-family: roboto;
   font-weight: bold;
   font-size: 16px;
+  color: #000000;
+}
+
+.container__localisation-saisie {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+  margin-left: 10px;
   position: relative;
-  top: -5px;
+  background-color: transparent;
+  border: 0px;
+  top: -35px;
+  left: 44%;
 }
 
 /* Reserver - Fonctionnement */
@@ -434,7 +469,7 @@ img.restaurants--presentation--img {
   font-family: "roboto", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  margin-top: 18px;
+  margin-top: px;
   margin-left: 20px;
   color: black;
 }
@@ -443,6 +478,7 @@ img.restaurants--presentation--img {
   font-family: "roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  margin-top: -15px;
   margin-left: 20px;
   color: black;
 }
@@ -709,7 +745,7 @@ img.restaurant__menu--img {
   font-family: "roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  margin-top: 10px;
+  margin-top: -10px;
   margin-left: 10px;
 }
 
@@ -718,7 +754,7 @@ img.restaurant__menu--img {
   font-family: "roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  margin-top: 8px;
+  margin-top: -10px;
   margin-left: 10px;
 }
 
